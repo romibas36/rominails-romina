@@ -152,6 +152,15 @@ header{
     
 }
 /*acac termina turnos*/
+.seccion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.medio{
+    background: rgb(175,31,187);
+    background: linear-gradient(90deg, rgba(175,31,187,1) 0%, rgba(23,25,131,1) 35%, rgba(25,9,121,1) 53%, rgba(0,212,255,1) 87%);
+}
 .seccion-uno{
     width: 100%;
     background-color: rgb(17,162,145);
