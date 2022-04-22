@@ -249,6 +249,10 @@ header{
 
 footer{
    /* background-color: rgb(235, 129, 196);*/
+
     background: rgb(31,93,187);
-background: linear-gradient(90deg, rgba(31,93,187,1) 11%, rgba(55,149,96,1) 52%, rgba(177,60,201,1) 87%);
+background-image:linear-gradient(90deg, rgba(187,31,96,1) 11%, rgba(42,88,205,1) 52%, rgba(60,201,132,1) 87%);
 }
+
+   /* background-image: linear-gradient(90deg, rgba(31,93,187,1) 11%, rgba(55,149,96,1) 52%, rgba(177,60,201,1) 87%);
+}*/
