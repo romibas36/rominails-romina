@@ -184,7 +184,7 @@ header{
     grid-auto-rows: minmax(250px, auto); 
 }
 .grid_hijo{
-    transition: 5s;
+    transition: 1s;
 }
 .grid_hijo :hover{
     transform: scale(1.2);
