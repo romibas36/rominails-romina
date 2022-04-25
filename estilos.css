@@ -149,11 +149,16 @@ header{
 .nail{
     display: flex;
     justify-content: center;
-    transition: 1s;
-    
+    transition:all 1s;
+    width: 200px;
+    height: 200px;
 }
 .nail :hover{
+    width: 100px;
+    height: 100px;
     transform: scale(1.3);
+    display: flex;
+    justify-content: end;
 }
 /*acac termina turnos*/
 .seccion{
