@@ -261,6 +261,14 @@ header{
 .grid_hijo img :hover{
     transform: scale(1,3);
 }
+.oferta{
+    border: 2px solid;
+    font-size: 25px;
+    width: 30%;
+    position: absolute;
+    top: 600px;
+    background-color: aqua;
+}
 
 
 footer{
