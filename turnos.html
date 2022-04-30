@@ -30,53 +30,37 @@
     </header>
 
     <main>
-        <div class="tratamiento">
-            <div class="turnos turnos-uno">
-                <label for="nombre">Nombre</label>
-                <input type="text" id="nombre" placeholder="nombre">
-
-                <label for="apellido">Apellido</label>
-                <input type="text" id="apellido" placeholder="apellido">
-                <label for="edad">Edad</label>
-                <input type="number" id="edad" placeholder="edad">
-                <label for="telefono">Telefono</label>
-                <input type="number" id="telefono" placeholder="telefono">
-          
-            <br>
-                <form>
+        <div class="bg-danger">
                 <h3>Tipo de esculpidas</h3>
-                <label for="tipo">Semipermanente</label>
-                <label for="semipermanente:"></label>
-                <input type="radio" name="semi" value="semi">
-                <label for="tipo">Gel</label>
-                <input type="radio" name="gel">
-                <label for="tipo" name="acrilico">Acrilico</label>
-                <input type="radio" name="acrilico" value="acri">
-                </form>
-                <br>
-                <br>
-            </div>
+               
+            
             <div class="turnos-tres">
             
                 <h3>Fechas disponibles</h3>
-                <p>Abril: 1, 2 ,3, 8, 9 y 10</p>
+                <p>Mayo: 1, 2 ,3, 8, 9 y 10</p>
                 <form action="" method="">
                 <input type="date" name="dia">
-
-            </form>
-            <br>
-            <br>   
-            <textarea name="fecha elegida" cols="10" rows="5">Comentarios</textarea>
-            <br>
-            <br>
-            <button>Enviar</button>
-            
-
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>Open this select menu</option>
+                    <option value="1">Gel</option>
+                    <option value="2">Semipermanente</option>
+                    <option value="3">Acrilicos</option>
+                </select>
+            <section class="container">
+                <form action="">
+                    <input type="text" placeholder="nombre" class="form-control">
+                    <input type="email" placeholder="email" class="form-control">
+                    <textarea rows="5" placeholder="mensaje" class="form-control">mensaje</textarea>
+                    
+                </form>
+            <button>Enviar ✔</button>
+          
             </div>
             <div class="nail">
             <img width="300" src="imagen-nails/logomanos.jpg" alt="">
             </div>
-        </div>       
+           
+        </div>    
 </main>
 
     <footer class="foo">

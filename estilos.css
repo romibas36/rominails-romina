@@ -158,7 +158,8 @@ header{
     height: 100px;
     transform: scale(1.3);
     display: flex;
-    justify-content: end;
+    justify-content: center;
+    align-items: center;
 }
 /*acac termina turnos*/
 .seccion{
