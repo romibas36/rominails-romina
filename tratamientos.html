@@ -13,56 +13,71 @@
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Ingrid+Darling&family=Send+Flowers&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="estilos.css">
     <link rel="stylesheet" href="./CSS/bootstrap.min.css">
-    <link rel="stylesheet" href="./JS/bootstrap.bundle.min.js">   
+    <script src="JS/bootstrap.bundle.min.js"></script>
+   
 </head>
 <body>
     <header>
-          
-        <ul class="inicios">
-            <li><a target="_blank" href="index.html">Inicio</a></li>
-            <li><a target="_blank" href="turnos.html">Turnos</a></li>
-            <li><a target="_blank" href="galeria.html">Galeria</a></li>
-            <li><a target="_blank" href="productos.html">Productos</a></li>
-            <li><a target="_blank" href="tratamientos.html">Tratamientos</a></li>
-        </ul>
+        <nav class="navbar navbar-expand-lg navbar-light bg-pink">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">Home❤</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link active" aria-current="page" href="turnos.html">Turnos</a>
+                  <a class="nav-link" href="galeria.html">Galeria</a>
+                  <a class="nav-link" href="productos.html">Productos</a>
+                  <a class="nav-link disabled" href="tratamientos.html" tabindex="-1" aria-disabled="true">Tratamientos</a>
+                </div>
+              </div>
+            </div>
+          </nav>
+       
       
     </header> 
 
-    <main>
-        <div class="spa__spa">
-            <h2>Tratamientos</h2>
+    <main class="row">
+        <section class="col col-lg 10">
+            <h1>Tratamientos</h1>
+            <div class="row">
+                <div class="col12 col-md-4">
+                <article class="card">
+                <div class="card" style="width: 18rem;">
+                <img src="imagen-nails/logomanos.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
             </div>
-        <div class="tratamiento">
-            <div class="manos">
-                <h3>Spa de manos</h3>
-                <p>Vamos a colocarte aceite y calentar tus manos, para luego masajear las manos con aceite.
-                Luego te vamos a limpiar colocamos un gel, luego envolvemos un film en tus manos
-                esto lo que hace, es suavizar tus manos y finalizamos colocando crema nutritiva.
-                </p>
-                <br>
-                <img width="200" src="imagen-nails/logomanos.jpg" alt="">
-            </div>  
-            <div class="manos-dos">
-                <h3>Tratamiento descongestivo</h3>
-                <p>Colocamos tonico descongestivo, mascarilla descongestiva, envolvemos con un film y luego vas a notar 
-                    tus manos super desinchadas, es genial!.
-                </p>
-                <br>
-                <img width="200" src="imagen-nails/gel3.jpg" alt="">
+                </article>
             </div>
-            <div class="manos-tres">  
-                <h3>Otras tecnicas que realizamos</h3>
-                <ul class="otros">
-                    <li>Fuentes de luz y laser para eliminar las manchas</li>
-                    <li>Peeling quimico para renovar la piel</li>
-                    <li>Revitalizacion con vitaminas para ganar luminosidad</li>
-                    <li>Acido hialuronico para hidratar en profundidad</li>
-                    <li>Relleno para recuperar el volumen de la piel</li>
-                    <li>Infiltracion con factores de crecimiento </li>
-                </ul>
-            </div>     
-        </div>    
-    </main>
+
+        <div class="col 12 col-md-4">
+            <article class="card">
+                <div class="card" style="width: 18rem;">
+             <img src="imagen-nails/gel3.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
+</article>
+</div>
+  <div class="card" style="width: 18rem;">
+    <img src="imagen-nails/fondo.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+        </div>
+        </div>
+        </section>
+    </div>
+</main>
 
     <footer class="foo">
         <h4>Derechos reservados  
