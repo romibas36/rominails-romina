@@ -1,0 +1,41 @@
+
+.index{
+
+    background-color: rgb(17,162,145);
+    display: flex;
+    .conse{
+        text-align: center;
+        background-color: rgb(17, 162, 145);
+        font-family: "send flowers", cursive;
+    }
+    .fondos{
+        padding: 20px;
+    }
+    .imagen-dos{
+        border-radius: 20%;
+        position: relative;
+        left: 100px;
+        padding: 20px;
+    }
+    .texto{
+        font-family: "send flowers", cursive;
+        font-weight: bold;
+        font-size: 20px;
+        padding-left: 20px;
+        letter-spacing: 1.5;
+    }
+    
+    .fondo{
+        letter-spacing: 1.5;
+        .consejos{
+            letter-spacing: 1.5;
+            background-color: rgb(17, 162, 196);
+                .li{
+                background-color: rgb(235, 129, 196);
+                list-style: none;
+                }
+        }
+
+        }
+    }
+    
