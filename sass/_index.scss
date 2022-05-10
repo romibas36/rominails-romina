@@ -91,6 +91,45 @@
         top: 600px;
         background-color: aqua;
     }
+    @media screen and (max-width:800px)
+{
+    .imagen-dos{
+        width: 70%;
+}
+    .fondo{
+        background-color: rgb(235, 129, 196);
+    }
+    .fondos{
+        background-color: rgb(17,162,196);
+    }
+    .consejos{
+        background-color: rgb(17, 162, 196);
+        list-style: none;
+    }
+    .grid{
+        display: grid;
+        grid-template-columns: 1;
+        grid-row: 8;
+    }
+    .seccion{
+        display: grid;
+        grid-template-columns: 1;
+        grid-row: 3;
+    }
+    .spa{
+        display: grid;
+        grid-template-columns: 1;
+        grid-row: 3;
+    }
+    .index{
+        display: grid;
+        grid-template-columns: 1;
+        grid-row: 3;
+    }
+    
+    }
+    
+
 
 
     
