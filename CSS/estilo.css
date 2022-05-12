@@ -1,6 +1,7 @@
 * {
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  box-sizing: border-box; }
 
 header {
   background-color: #eb81c4; }
@@ -33,6 +34,11 @@ header {
   header .subtitulo {
     font-family: "send flowers", cursive; }
 
+.container {
+  background-color: #d119a9; }
+  .container__text {
+    color: white; }
+
 .index {
   background-color: #11a291;
   display: flex; }
@@ -53,6 +59,8 @@ header {
     font-size: 20px;
     padding-left: 20px;
     letter-spacing: 1.5; }
+  .index div {
+    background-color: #11a291; }
   .index .fondo {
     letter-spacing: 1.5; }
     .index .fondo .consejos {
@@ -107,6 +115,45 @@ header {
   top: 600px;
   background-color: aqua; }
 
+@media screen and (max-width: 800px) {
+  .imagen-dos {
+    width: 70%; }
+  .fondo {
+    background-color: #eb81c4; }
+  .fondos {
+    background-color: #11a2c4; }
+  .consejos {
+    background-color: #11a2c4;
+    list-style: none; }
+  .grid {
+    display: grid;
+    grid-template-columns: 1;
+    grid-row: 8; }
+  .seccion {
+    display: grid;
+    grid-template-columns: 1;
+    grid-row: 3; }
+  .spa {
+    display: grid;
+    grid-template-columns: 1;
+    grid-row: 3; }
+  .index {
+    display: grid;
+    grid-template-columns: 1;
+    grid-row: 3; }
+  .tituloTratamiento {
+    background-color: plum;
+    text-align: center;
+    padding: 15px;
+    letter-spacing: 1.5; }
+  .formulario {
+    padding: 20px; }
+  .calendario {
+    align-items: center;
+    margin: 10px auto;
+    padding: 5px; } }
+
 footer {
   background: #1f5dbb;
-  background-image: linear-gradient(306deg, #1747a8 19%, rgba(9, 121, 107, 0.87069) 62%, #d630c4 76%); }
+  background-image: linear-gradient(306deg, #1747a8 19%, rgba(9, 121, 107, 0.87069) 62%, #d630c4 76%);
+  font-size: 20px; }

@@ -40,3 +40,10 @@ header{
     
     
 }
+.container{
+    background-color: #d119a9;
+    &__text{
+        color:$bgcolor;
+      }
+  
+    }

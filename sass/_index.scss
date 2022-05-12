@@ -1,4 +1,10 @@
-
+@mixin medio {
+    display: grid;
+    grid-template-columns: 1;
+    grid-row: 3;
+}
+    
+}
 .index{
 
     background-color: rgb(17,162,145);
@@ -24,19 +30,11 @@
         padding-left: 20px;
         letter-spacing: 1.5;
     }
+    div{
+        background-color: $letra;
+    }
     
-    .fondo{
-        letter-spacing: 1.5;
-        .consejos{
-            letter-spacing: 1.5;
-            background-color: rgb(17, 162, 196);
-                .li{
-                background-color: rgb(235, 129, 196);
-                list-style: none;
-                }
-        }
-
-        }
+    
 
     }
     .seccion-uno{
@@ -110,26 +108,44 @@
         display: grid;
         grid-template-columns: 1;
         grid-row: 8;
+        .grid_hijo img :hover{
+            transform: scale(1,3);
+        }
     }
     .seccion{
-        display: grid;
+      /*  display: grid;
         grid-template-columns: 1;
-        grid-row: 3;
+        grid-row: 3;*/
+        @include medio();
     }
     .spa{
-        display: grid;
+       /* display: grid;
         grid-template-columns: 1;
-        grid-row: 3;
+        grid-row: 3;*/
+        @include medio();
     }
     .index{
-        display: grid;
+       /* display: grid;
         grid-template-columns: 1;
-        grid-row: 3;
+        grid-row: 3;*/
+        @include medio();
+    }
+    .tituloTratamiento{
+        background-color: plum;
+        text-align: center;
+        padding: 15px;
+        letter-spacing: 1.5;
+    }
+    .formulario{
+        padding:20px;
+    }
+    .calendario{
+        align-items: center;
+        margin:10px auto;
+        padding:5px;
+    } 
     }
     
-    }
-    
-
 
 
     
