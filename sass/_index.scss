@@ -1,10 +1,23 @@
-@mixin medio {
+@mixin medio ($sol) {
     display: grid;
     grid-template-columns: 1;
     grid-row: 3;
 }
-    
+@mixin cal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:10px auto;
+    padding:5px;
 }
+@mixin trat {
+    background-color: plum;
+    text-align: center;
+    padding: 15px;
+    letter-spacing: 1.5;
+}
+    
+
 .index{
 
     background-color: rgb(17,162,145);
@@ -116,36 +129,61 @@
       /*  display: grid;
         grid-template-columns: 1;
         grid-row: 3;*/
-        @include medio();
+        @include medio(pink);
     }
-    .spa{
-       /* display: grid;
-        grid-template-columns: 1;
-        grid-row: 3;*/
-        @include medio();
-    }
+   
     .index{
        /* display: grid;
         grid-template-columns: 1;
         grid-row: 3;*/
-        @include medio();
+        @include medio(lightblue);
     }
     .tituloTratamiento{
-        background-color: plum;
+        @include trat()
+       /* background-color: plum;
         text-align: center;
         padding: 15px;
-        letter-spacing: 1.5;
+        letter-spacing: 1.5;*/
     }
     .formulario{
         padding:20px;
     }
     .calendario{
+        @include cal()
+      /*  display: flex;
+        justify-content: center;
         align-items: center;
         margin:10px auto;
-        padding:5px;
+        padding:5px;*/
     } 
     }
-    
-
-
-    
+    .tituloTratamiento{
+        @include trat()
+       /* background-color: plum;
+        text-align: center;
+        padding: 15px;
+        letter-spacing: 1.5; */
+    }
+    .calendario{
+        @include cal()
+       /* display: flex;
+        justify-content: center;
+        align-items: center;
+        margin:10px auto;
+        padding:5px;*/
+    } 
+    .clases{
+        box-shadow: 0 20px 30px blue;
+        text-align: center;
+    }
+    .grid{
+        display: grid;
+        grid-template-columns: 2;
+        grid-row: 8;
+        .grid_hijo img :hover{
+            transform: scale(1,3);
+        }
+    }
+    @each $queen in (h3, h4){
+        #{$queen} {text-transform: uppercase;}
+    }
