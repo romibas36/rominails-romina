@@ -1,3 +1,10 @@
 $bgcolor: white;
 $letra: rgb(17, 162, 145);
 $pie: 20px;
+$color:(
+    primary:rgb(0, 255, 68),
+    secondary:black,
+);
+h6{color: map-get($color, primary );}
+
+

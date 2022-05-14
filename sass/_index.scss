@@ -1,3 +1,7 @@
+$color:(
+    primary:rgb(0, 255, 68),
+    secondary:black,);
+    
 @mixin medio ($sol) {
     display: grid;
     grid-template-columns: 1;
@@ -187,3 +191,7 @@
     @each $queen in (h3, h4){
         #{$queen} {text-transform: uppercase;}
     }
+   
+    
+    h6{color: map-get($color, primary )}
+    
