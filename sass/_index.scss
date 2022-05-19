@@ -1,3 +1,4 @@
+
 $color:(
     primary:rgb(0, 255, 68),
     secondary:black,);
@@ -23,8 +24,9 @@ $color:(
     
 
 .index{
-
-    background-color: rgb(17,162,145);
+    padding: 0;
+   /* background-color: rgb(17,162,145);*/
+   background-image: url("imagen-nails/mariposaesmalte.png");
     display: flex;
     .conse{
         text-align: center;
