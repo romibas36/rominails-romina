@@ -1,9 +1,9 @@
-# rominails-romina
-Creando un repositorio
-# H1
+# Rominails
+Belleza en tus manos
 
-**bold text**
 
-- First item
-- Second item
-- Third item
+**Vas a volver**
+
+- Belleza
+- Comodidad
+- Tratamientos
