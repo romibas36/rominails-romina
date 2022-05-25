@@ -4,7 +4,7 @@
   box-sizing: border-box; }
 
 h6 {
-  color: #00ff44; }
+  color: #3f0da2; }
 
 header {
   padding: 0;
@@ -44,17 +44,21 @@ header {
     color: white; }
 
 .index {
-  padding: 0;
+  padding: 10%;
   /* background-color: rgb(17,162,145);*/
-  background-image: url("imagen-nails/mariposaesmalte.png");
-  display: flex; }
+  display: flex;
+  /*hasta aca es el indexx*/ }
   .index .conse {
     text-align: center;
-    background-color: #11a291;
+    /* background-color: rgb(17, 162, 145);*/
     font-family: "send flowers", cursive; }
-  .index .fondos {
-    padding: 20px; }
+  .index .section {
+    border: 2px seagreen solid;
+    box-shadow: 0 20px 30px blue;
+    text-align: center; }
   .index .imagen-dos {
+    box-shadow: 0 20px 30px blue;
+    text-align: center;
     border-radius: 20%;
     position: relative;
     left: 100px;
@@ -63,19 +67,26 @@ header {
     font-family: "send flowers", cursive;
     font-weight: bold;
     font-size: 20px;
-    padding-left: 20px;
+    /*  padding-left: 20px;*/
     letter-spacing: 1.5; }
   .index div {
-    background-color: #11a291; }
+    /* background-color: $letra;*/
+    position: flex;
+    align-items: flex-end; }
+  .index .mariposa {
+    display: flex;
+    align-items: flex-end; }
 
 .seccion-uno {
-  background-color: #11a291; }
+  border: 5px solid;
+  /* background-color: rgb(17,162,145);*/ }
   .seccion-uno .seccion__titulo {
     text-align: center;
     margin-bottom: 2rem; }
     .seccion-uno .seccion__titulo .grid {
-      background-color: #11a291;
-      display: grid;
+      /* background-color: rgb(17, 162, 145);*/
+      display: flex;
+      flex-direction: row;
       border: 2px solid #e3aaaa;
       padding: 1rem;
       min-height: 500px;
@@ -116,6 +127,9 @@ header {
 @media screen and (max-width: 800px) {
   .imagen-dos {
     width: 70%; }
+  .seccion-uno {
+    display: flex;
+    flex-direction: column; }
   .fondo {
     background-color: #eb81c4; }
   .fondos {
@@ -208,8 +222,10 @@ h4 {
 h6 {
   color: #00ff44; }
 
+@media screen and (max-width: 500px) {
+  background-color: #eb81c4; }
+
 footer {
-  background: #1f5dbb;
   /*background-image: linear-gradient(306deg, rgba(23,71,168,1) 19%, rgba(9,121,107,0.8706896551724138) 62%, rgba(214,48,196,1) 76%);
    */
   font-size: 20px; }
