@@ -1,6 +1,6 @@
 
 $color:(
-    primary:rgb(0, 255, 68),
+    primary:rgb(181, 17, 50),
     secondary:black,);
     
 @mixin medio ($sol) {
@@ -21,32 +21,16 @@ $color:(
     padding: 15px;
     letter-spacing: 1.5;
 }
-    
 
 .index{
-   
     padding: 10%;
-   /* background-color: rgb(17,162,145);*/
-   
     display: flex;
-    .conse{
-        text-align: center;
-       /* background-color: rgb(17, 162, 145);*/
-        font-family: "send flowers", cursive;
-    }
-    .section{
-        border: 2px seagreen solid;
-        box-shadow: 0 20px 30px blue;
-        text-align: center;
-    }
-   
     .imagen-dos{
         box-shadow: 0 20px 30px blue;
         text-align: center;
         border-radius: 20%;
         position: relative;
         left: 100px;
-        padding: 20px;
     }
     .texto{
         font-family: "send flowers", cursive;
@@ -55,14 +39,19 @@ $color:(
       /*  padding-left: 20px;*/
         letter-spacing: 1.5;
     }
-    div{
-      /* background-color: $letra;*/
-      position: flex;
-      align-items: flex-end;
+    .offcanvas-body{
+        font-family: "send flowers", cursive;
+        font-size: 20px;
+        font-weight: bold;
+        border: 2px solid;
+        background-color: hotpink;
     }
    .mariposa{
-       display: flex;
-       align-items: flex-end;
+       font-size: 25px;
+       width: 30%;
+       position: absolute;
+       top: 400px;
+       right: 100px;
        
    }
 /*hasta aca es el indexx*/
@@ -77,23 +66,19 @@ $color:(
                /* background-color: rgb(17, 162, 145);*/
                 display: flex;
                 flex-direction: row;
-                border: 2px solid rgb(227, 170, 170);
                 padding: 1rem;
                 min-height: 500px;
                 grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
                 grid-auto-rows: minmax(250px, auto); 
-                .grid_hijo{
-                    transition: 1s;
-                }
-                .grid_hijo :hover{
-                    transform: scale(1.2);
-                }
+              
             }
         }     
     }
     .produ{
-        background-color: rgb(17, 162, 145);
-
+            background-color: plum;
+            text-align: center;
+            padding: 15px;
+            letter-spacing: 1.5; 
     }
     .medio{
         background: rgb(175,31,187);
@@ -109,10 +94,10 @@ $color:(
         display: grid;
         grid-template-columns: 3;
         grid-row: 1;
-        .grid_hijo img :hover{
-            transform: scale(1,3);
-        }
     } 
+    .grid_hijo img :hover{
+        transform: scale(1,3);
+    }
     .oferta{
         border: 2px solid;
         font-size: 25px;
@@ -121,14 +106,18 @@ $color:(
         top: 600px;
         background-color: aqua;
     }
-    @media screen and (max-width:800px)
-{
+    @media screen and (max-width:800px){
+
     .imagen-dos{
         width: 70%;
 }
     .seccion-uno{
         display: flex;
-        flex-direction: column;
+        padding: 5px;
+        .grid_hijo{
+            flex: 25%;
+            padding: 5px;
+        }
     }
     .fondo{
         background-color: rgb(235, 129, 196);
@@ -136,32 +125,25 @@ $color:(
     .fondos{
         background-color: rgb(17,162,196);
     }
-    .consejos{
-        background-color: rgb(17, 162, 196);
-        list-style: none;
-    }
-    .grid{
-        display: grid;
-        grid-template-columns: 1;
-        grid-row: 8;
-        .grid_hijo img :hover{
-            transform: scale(1,3);
-        }
-    }
+}
     .seccion{
       /*  display: grid;
         grid-template-columns: 1;
         grid-row: 3;*/
         @include medio(pink);
     }
-   
-    .index{
-       /* display: grid;
-        grid-template-columns: 1;
-        grid-row: 3;*/
-        @include medio(lightblue);
-       
-    }
+   .seccion-uno{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       background-color: rgb(209, 70, 93);
+       .grid_hijo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 5px;
+       }
+   }
     .tituloTratamiento{
         @include trat()
        /* background-color: plum;
@@ -180,7 +162,7 @@ $color:(
         margin:10px auto;
         padding:5px;*/
     } 
-    }
+    
     .tituloTratamiento{
         @include trat()
        /* background-color: plum;
@@ -200,21 +182,19 @@ $color:(
         box-shadow: 0 20px 30px blue;
         text-align: center;
     }
-    .grid{
-        display: grid;
-        grid-template-columns: 2;
-        grid-row: 8;
-        .grid_hijo img :hover{
-            transform: scale(1,3);
-        }
-    }
+    
     @each $queen in (h3, h4){
         #{$queen} {text-transform: uppercase;}
     }
-   
-    
+
     h6{color: map-get($color, primary )}
-    @media screen and (max-width:500px)
-    {
-        background-color: rgb(235, 129, 196);  
+
+    @media screen and (min-width:1200px){
+        .seccion-uno{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: rgb(212, 48, 75);
+            padding: 5px;
+        }
     }

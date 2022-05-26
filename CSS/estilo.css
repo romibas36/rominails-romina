@@ -43,39 +43,40 @@ header {
   .container__text {
     color: white; }
 
+.titulo-turnos {
+  text-align: center;
+  font-family: "send flowers", cursive;
+  font-size: 50px;
+  text-align: center; }
+
 .index {
   padding: 10%;
-  /* background-color: rgb(17,162,145);*/
   display: flex;
   /*hasta aca es el indexx*/ }
-  .index .conse {
-    text-align: center;
-    /* background-color: rgb(17, 162, 145);*/
-    font-family: "send flowers", cursive; }
-  .index .section {
-    border: 2px seagreen solid;
-    box-shadow: 0 20px 30px blue;
-    text-align: center; }
   .index .imagen-dos {
     box-shadow: 0 20px 30px blue;
     text-align: center;
     border-radius: 20%;
     position: relative;
-    left: 100px;
-    padding: 20px; }
+    left: 100px; }
   .index .texto {
     font-family: "send flowers", cursive;
     font-weight: bold;
     font-size: 20px;
     /*  padding-left: 20px;*/
     letter-spacing: 1.5; }
-  .index div {
-    /* background-color: $letra;*/
-    position: flex;
-    align-items: flex-end; }
+  .index .offcanvas-body {
+    font-family: "send flowers", cursive;
+    font-size: 20px;
+    font-weight: bold;
+    border: 2px solid;
+    background-color: hotpink; }
   .index .mariposa {
-    display: flex;
-    align-items: flex-end; }
+    font-size: 25px;
+    width: 30%;
+    position: absolute;
+    top: 400px;
+    right: 100px; }
 
 .seccion-uno {
   border: 5px solid;
@@ -87,18 +88,16 @@ header {
       /* background-color: rgb(17, 162, 145);*/
       display: flex;
       flex-direction: row;
-      border: 2px solid #e3aaaa;
       padding: 1rem;
       min-height: 500px;
       grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
       grid-auto-rows: minmax(250px, auto); }
-      .seccion-uno .seccion__titulo .grid .grid_hijo {
-        transition: 1s; }
-      .seccion-uno .seccion__titulo .grid .grid_hijo :hover {
-        transform: scale(1.2); }
 
 .produ {
-  background-color: #11a291; }
+  background-color: plum;
+  text-align: center;
+  padding: 15px;
+  letter-spacing: 1.5; }
 
 .medio {
   background: #af1fbb;
@@ -109,12 +108,9 @@ header {
     align-items: center; }
 
 .producto {
-  border: 2px solid #e3aaaa;
   display: grid;
   grid-template-columns: 3;
   grid-row: 1; }
-  .producto .grid_hijo img :hover {
-    transform: scale(1, 3); }
 
 .oferta {
   border: 2px solid;
@@ -129,56 +125,58 @@ header {
     width: 70%; }
   .seccion-uno {
     display: flex;
-    flex-direction: column; }
+    padding: 5px; }
+    .seccion-uno .grid_hijo {
+      flex: 25%;
+      padding: 5px; }
   .fondo {
     background-color: #eb81c4; }
   .fondos {
-    background-color: #11a2c4; }
-  .consejos {
-    background-color: #11a2c4;
-    list-style: none; }
-  .grid {
-    display: grid;
-    grid-template-columns: 1;
-    grid-row: 8; }
-    .grid .grid_hijo img :hover {
-      transform: scale(1, 3); }
-  .seccion {
-    /*  display: grid;
+    background-color: #11a2c4; } }
+
+.seccion {
+  /*  display: grid;
         grid-template-columns: 1;
         grid-row: 3;*/
-    display: grid;
-    grid-template-columns: 1;
-    grid-row: 3; }
-  .index {
-    /* display: grid;
-        grid-template-columns: 1;
-        grid-row: 3;*/
-    display: grid;
-    grid-template-columns: 1;
-    grid-row: 3; }
-  .tituloTratamiento {
-    background-color: plum;
-    text-align: center;
-    padding: 15px;
-    letter-spacing: 1.5;
-    /* background-color: plum;
+  display: grid;
+  grid-template-columns: 1;
+  grid-row: 3; }
+
+.seccion-uno {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #d1465d; }
+  .seccion-uno .grid_hijo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px; }
+
+.tituloTratamiento {
+  background-color: plum;
+  text-align: center;
+  padding: 15px;
+  letter-spacing: 1.5;
+  /* background-color: plum;
         text-align: center;
         padding: 15px;
         letter-spacing: 1.5;*/ }
-  .formulario {
-    padding: 20px; }
-  .calendario {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 10px auto;
-    padding: 5px;
-    /*  display: flex;
+
+.formulario {
+  padding: 20px; }
+
+.calendario {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px auto;
+  padding: 5px;
+  /*  display: flex;
         justify-content: center;
         align-items: center;
         margin:10px auto;
-        padding:5px;*/ } }
+        padding:5px;*/ }
 
 .tituloTratamiento {
   background-color: plum;
@@ -206,13 +204,6 @@ header {
   box-shadow: 0 20px 30px blue;
   text-align: center; }
 
-.grid {
-  display: grid;
-  grid-template-columns: 2;
-  grid-row: 8; }
-  .grid .grid_hijo img :hover {
-    transform: scale(1, 3); }
-
 h3 {
   text-transform: uppercase; }
 
@@ -220,10 +211,15 @@ h4 {
   text-transform: uppercase; }
 
 h6 {
-  color: #00ff44; }
+  color: #b51132; }
 
-@media screen and (max-width: 500px) {
-  background-color: #eb81c4; }
+@media screen and (min-width: 1200px) {
+  .seccion-uno {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #d4304b;
+    padding: 5px; } }
 
 footer {
   /*background-image: linear-gradient(306deg, rgba(23,71,168,1) 19%, rgba(9,121,107,0.8706896551724138) 62%, rgba(214,48,196,1) 76%);
