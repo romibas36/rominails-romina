@@ -108,9 +108,13 @@ header {
     align-items: center; }
 
 .producto {
+  border: 2px solid #e3aaaa;
   display: grid;
   grid-template-columns: 3;
   grid-row: 1; }
+
+.grid_hijo img :hover {
+  transform: scale(1, 3); }
 
 .oferta {
   border: 2px solid;
