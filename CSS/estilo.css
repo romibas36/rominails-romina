@@ -8,7 +8,8 @@ h6 {
 
 header {
   padding: 0;
-  background-color: #eb81c4; }
+  background-color: #eb81c4;
+  /*esto es una animacion*/ }
   header h1 {
     font-family: "send flowers", cursive;
     font-size: 50px; }
@@ -37,7 +38,6 @@ header {
     font-size: 60px; }
   header .subtitulo {
     font-family: "send flowers", cursive; }
-    /*animacion aqui*/
 
 .container {
   background-color: #d119a9; }
