@@ -1,0 +1,58 @@
+header{
+    padding: 0;
+    background-color: rgb(235, 129, 196);
+    h1{
+        font-family: "send flowers", cursive;
+        font-size: 50px;
+      
+    }
+    .logos{
+        animation-name: efecto;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        .logo{
+            border-radius: 30%;
+            display: flex;
+            justify-content: center;
+           
+        }
+    }
+    @keyframes efecto{
+        from{
+            opacity: 1;
+            transform: translate(0);
+        }
+        to{
+            opacity: 0;
+            transform: translate(300px);
+        }
+    }
+    /*esto es una animacion*/
+    .titulo{
+        font-family: "send flowers", cursive;
+        font-size: 50px;
+        position: absolute;
+        top: 140px;
+        left: 100px;
+        font-size: 60px;
+    }
+    .subtitulo{
+        font-family: "send flowers", cursive;
+    }
+    
+    
+}
+.container{
+    background-color: #d119a9;
+    &__text{
+        color:$bgcolor;
+      }
+  
+    }
+    
+    .titulo-turnos{
+        text-align: center;
+        font-family: "send flowers", cursive;
+        font-size: 50px;
+        text-align: center;
+    }                                                                             
